@@ -1,0 +1,118 @@
+:root {
+  --dark-color: #212121;
+}
+
+body {
+  font-family: system-ui;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+background-color: rgb(195, 0, 255);
+}
+#container{
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 5px white;
+  box-sizing: content-box;
+  background-color: rgb(241, 241, 241);
+  width: 500px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 20px;
+ align-items: center;
+ margin: auto;
+ margin-top: -1.5rem;
+margin-bottom: 2rem;
+}
+h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+h1 {
+  font-weight: normal;
+  margin-top: -0.50rem;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+#IITV {
+  border-radius: 150%;
+  height: 200px;
+  width: 200px;
+margin-top: -2rem;
+}
+#enlogo {
+  height: 200px;
+  width: 200px;
+margin-top: -1rem;
+border-radius: 8px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main * {
+  margin-bottom: 12px;
+}
+#enigma{
+  text-decoration: none;
+}
+input {
+  text-align: center;
+  font-size: larger;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+/* for styling the autocomplete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+button {
+  background: #8bc34a;
+  border: none;
+  font-size: 0.8em;
+  padding: 5px 15px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background: #64bb00;
+  font-size: 1.4rem;
+}
+a {
+  color: #6492f6;
+}
+
+/* dark mode css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  input,
+  input:active {
+    background: var(--dark-color);
+    border-color: #fff;
+    color: #fff;
+  }
+
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
